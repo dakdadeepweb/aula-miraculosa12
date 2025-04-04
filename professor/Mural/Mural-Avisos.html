@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mural de Avisos</title>
+  <link rel="stylesheet" href="Mural-Avisos.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../tarefas/lançartarefa.html">Lançar Tarefa</a></li>
+                <li><a href="../tarefas/Atividades.html">Atividades</a></li>
+                <li><a href="../Frequência/LançarFrequencia.html">Lançar Frequência</a></li>
+                <li><a href="../Notas/LançarNotas.html">Lançar Notas</a></li>
+            </ul>
+        </div>
+
+  <div class="content">
+    <h1>Lançar Aviso</h1>
+    <form id="mural-form">
+      <label for="titulo">Título da Mensagem:</label>
+      <input type="text" id="titulo" required>
+
+      <label for="mensagem">Informação da Mensagem:</label>
+      <textarea id="mensagem" rows="4" required></textarea>
+
+      <label for="cor">Cor da Borda (ex: yellow, #fdd835...):</label>
+      <input type="text" id="cor" placeholder="yellow" required>
+
+      <label for="data-inicio">Data de Início:</label>
+      <input type="date" id="data-inicio" required>
+
+      <label for="data-delete">Data de Delete:</label>
+      <input type="date" id="data-delete" required>
+
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" required>
+
+      <button type="submit">Publicar Aviso</button>
+    </form>
+  </div>
+
+  <script type="module" src="../../assests/firebase-config.js"></script>
+  <script type="module" src="Mural-Avisos.js"></script>
+</body>
+</html>

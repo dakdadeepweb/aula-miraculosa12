@@ -1,0 +1,126 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 150px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px;
+    padding-top: 10px;
+    height: vh;
+    position: fixed;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.sidebar .ativo a {
+    background-color: #E3F2FD;
+}
+
+.sidebar a:hover {
+    background-color: #BBDEFB;
+}
+
+/* Conteúdo principal */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+}
+
+/* Cartão da tarefa */
+.tarefa-card {
+    background-color: white;
+    border: 1px solid #42ff00;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #4caf50;
+}
+
+.tarefa-card h2 {
+    color: #1e2a5f;
+    font-size: 24px;
+}
+
+.tarefa-card p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.status {
+    background-color: #f39c12;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dates span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.progresso-container {
+    margin-top: 20px;
+}
+
+.progresso-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.progresso-bar-inner {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Botão */
+.button-container {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px;
+    padding-top: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.sidebar .ativo a {
+    background-color: #E3F2FD;
+}
+
+.sidebar a:hover {
+    background-color: #BBDEFB;
+}
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+}
+
+.tarefa-card {
+    background-color: white;
+    border: 2px solid cyan;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px cyan;
+}
+
+.tarefa-card h2 {
+    color: #007c91;
+    font-size: 22px;
+}
+
+.tarefa-card .dates span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0097a7;
+}
+.prova-card {
+    background-color: white;
+    border: 2px solid #00bcd4; /* Borda ciano */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #00bcd4;
+}
+
+.prova-card h3 {
+    color: #1e2a5f;
+    font-size: 24px;
+}
+
+.prova-card p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.prova-card a {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.prova-card a:hover {
+    background-color: #0097a7;
+}

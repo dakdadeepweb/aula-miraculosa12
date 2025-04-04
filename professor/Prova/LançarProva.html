@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançar Prova</title>
+    <link rel="stylesheet" href="LancarProva.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../tarefas/lançartarefa.html">Lançar Tarefa</a></li>
+                <li><a href="../Prova/LançarProva.html">Lançar Tarefa</a></li>
+                <li><a href="../tarefas/Atividades.html">Atividades</a></li>
+                <li><a href="../Frequência/LançarFrequencia.html">Lançar Frequência</a></li>
+                <li><a href="../Notas/LançarNotas.html">Lançar Notas</a></li>
+            </ul>
+        </div>
+
+    <div class="content">
+        <h1>Lançar Prova</h1>
+        <form id="prova-form">
+            <label for="materia">Nome da Matéria:</label>
+            <input type="text" id="materia" required>
+
+            <label for="nome-prova">Nome da Prova:</label>
+            <input type="text" id="nome-prova" required>
+
+            <label for="data-abertura">Data de Abertura:</label>
+            <input type="date" id="data-abertura" required>
+
+            <label for="data-entrega">Data de Entrega:</label>
+            <input type="date" id="data-entrega" required>
+
+            <label for="link">Link da Prova:</label>
+            <input type="url" id="link" required>
+
+            <button type="submit">Lançar Prova</button>
+        </form>
+    </div>
+
+    <script type="module" src="../../assests/firebase-config.js"></script>
+    <script type="module" src="LançarProva.js"></script>
+</body>
+</html>

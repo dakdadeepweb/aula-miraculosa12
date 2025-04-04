@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançar Frequência - Sala do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="LançarFrequencia.js
+    " defer></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../tarefas/lançartarefa.html">Lançar Tarefa</a></li>
+                <li><a href="../Prova/LançarProva.html">Lançar Tarefa</a></li>
+                <li><a href="../tarefas/Atividades.html">Atividades</a></li>
+                <li><a href="../Frequência/LançarFrequencia.html">Lançar Frequência</a></li>
+                <li><a href="../Notas/LançarNotas.html">Lançar Notas</a></li>
+            </ul>
+        </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Cabeçalho -->
+        <header>
+            <h1 style="color: red; font-weight: bold; font-size: 48px;">Frequência</h1>
+        </header>
+
+        <!-- Título da Plataforma -->
+        <section id="topo-interface">
+            <div id="faixa-rosa">
+                <h2>Frequência</h2>
+            </div>
+        </section>
+
+        <!-- Aviso -->
+        <section id="aviso">
+            <div class="aviso-quadro">
+                <strong>Aviso!</strong>
+                <p>O prazo para lançamento de frequência para o seu perfil será de até 8 dias corridos.</p>
+            </div>
+        </section>
+
+        <!-- Calendário de Frequência -->
+        <section id="calendario">
+            <h3>Calendário de Frequência</h3>
+            <input type="date" id="data-lancamento" required>
+        </section>
+
+        <!-- Horário da Aula -->
+        <section id="horario">
+            <h3>Horário da Aula</h3>
+            <select id="horario-aula" required>
+                <option value="08:00">08:00</option>
+                <option value="10:00">10:00</option>
+                <option value="14:00">14:00</option>
+                <option value="16:00">16:00</option>
+            </select>
+        </section>
+
+        <!-- Tabela de Alunos -->
+        <section id="alunos">
+            <h3>Lista de Alunos</h3>
+            <table id="tabela-alunos">
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Nome do Aluno</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Alunos serão adicionados aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Botões -->
+        <section id="botoes">
+            <button id="marcar-todos">Marcar todos como Compareceram</button>
+            <button id="salvar">Salvar Frequência</button>
+        </section>
+    </main>
+
+</body>
+</html>

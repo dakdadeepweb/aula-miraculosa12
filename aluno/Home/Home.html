@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home do Aluno</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Menu Lateral -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../Tarefas/FazerTarefas.html">Tarefas</a></li>
+                <li><a href="../Provas/FazerProva.html">Provas</a></li>
+                <li><a href="../Notas/VerNotas.html">Notas</a></li>
+            </ul>
+        </div>
+
+        <!-- Área Principal -->
+        <main class="conteudo">
+            <div class="boas-vindas">
+                <h2>Olá, <span id="nomeAluno">Carregando...</span>!</h2>
+                <p>Seja bem-vindo ao seu painel de controle.</p>
+            </div>
+
+            <!-- Cartões de Informações -->
+            <section class="info-cards">
+                <div class="card">
+                    <h3>Pendências</h3>
+                    <p class="number" id="pendencias">0</p>
+                    <p class="description">VA ATÉ ESTA PAGINA <a href="../Tarefas/FazerTarefas.html" target="_blank">Fazer Tarefas</a> PARA VER E</p>
+                </div>
+                <div class="card">
+                    <h3>Faltas</h3>
+                    <p class="number" id="faltas">???</p>
+                    <p class="description">Em Desenvolvimento</p>
+                </div>
+            </section>
+
+            <!-- Plataformas -->
+            <section class="plataformas">
+                <div class="plataforma-card">
+                    <a href="https://leia-aus.vercel.app" target="_blank">
+                    <img src="/assests/Leiaaus.png.png" alt="CatNet">
+                    <p>Leia aus</p>
+                </div>
+                <div class="plataforma-card">
+                    <a href="https://miraculousocs.vercel.app/" target="_blank">
+                    <img src="/assests/MiraculousOcs.png" alt="Miraculous OCs">
+                    <p>Miraculous OCs</p>
+                </div>
+                <div class="plataforma-card">
+                    <img src="/assests/CatNet.png" alt="Leia Aus">
+                    <a href="https://cat-net.vercel.app/" target="_blank">
+                    <p>CatNet</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="Home.js"></script>
+</body>
+</html>

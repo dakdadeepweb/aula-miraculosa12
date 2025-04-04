@@ -1,0 +1,152 @@
+/* Reset e Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+/* MENU LATERAL */
+.sidebar {
+    width: 250px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 5px;
+    padding-top: 20px;
+    height: 100vh; /* Faz o menu lateral ocupar toda a altura */
+    position: fixed; /* Fixa a sidebar na tela */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.sidebar .ativo a {
+    background-color: #E3F2FD;
+}
+
+.sidebar a:hover {
+    background-color: #BBDEFB;
+}
+
+/* ÁREA PRINCIPAL */
+.conteudo {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 5px;
+    margin-left: 250px; /* Para o conteúdo não ficar escondido atrás da sidebar */
+}
+
+/* BOAS-VINDAS */
+.boas-vindas {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+}
+
+/* CARTÕES DE INFORMAÇÕES */
+.info-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os cartões quebrem para a linha de baixo se precisar */
+}
+
+.card {
+    width: 200px;
+    height: 120px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card h3 {
+    color: #424242;
+    font-size: 16px;
+}
+
+.card .number {
+    font-size: 24px;
+    color: #1976D2;
+    font-weight: bold;
+}
+
+.card .description {
+    font-size: 12px;
+    color: #757575;
+}
+
+/* CARTÕES DE PLATAFORMAS */
+.plataformas {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.plataforma-card {
+    width: 180px;
+    height: 80px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plataforma-card img {
+    width: 70px;
+    height: 50px;
+    object-fit: contain; /* Ajusta a imagem sem distorcer */
+    border-radius: 8px;
+}
+
+.plataforma-card p {
+    font-size: 14px;
+    color: #424242;
+    margin-top: 5px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu-lateral {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .conteudo {
+        margin-left: 0;
+    }
+}
